@@ -1,0 +1,77 @@
+{
+    "type": "FeatureCollection",
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+        }
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": "MSC",
+                "ID": "1",
+                "ROAD_NAME": "Seletar Link",
+                "DIRECTION": "Seletar North Link",
+                "LATITUDE": "1.407429",
+                "LONGITUDE": "103.884916",
+                "DESCP": "near lamp post 37",
+                "INC_CRC": "6DE04D1DB9E0CA84",
+                "FMEL_UPD_D": "20161230200915"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.884915999996,
+                    1.40742900000026,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": "MSC",
+                "ID": "2",
+                "ROAD_NAME": "Lim Chu Kang Road",
+                "DIRECTION": "Neo Tiew Road",
+                "LATITUDE": "1.391443",
+                "LONGITUDE": "103.698523",
+                "DESCP": "near lamp post 95",
+                "INC_CRC": "87B0B128F7832D49",
+                "FMEL_UPD_D": "20161230200915"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.698523,
+                    1.39144299999782,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": "MSC",
+                "ID": "3",
+                "ROAD_NAME": "Changi Coast Road",
+                "DIRECTION": "East Coast Parkway",
+                "LATITUDE": "1.34145",
+                "LONGITUDE": "103.99332",
+                "DESCP": "near lamp post 164F",
+                "INC_CRC": "3EA605CD0E34D8C7",
+                "FMEL_UPD_D": "20161230200915"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.993320000003,
+                    1.3414500000011,
+                    0.0
+                ]
+            }
+        }
+    ]
+}
