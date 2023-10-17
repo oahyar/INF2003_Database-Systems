@@ -1,0 +1,20 @@
+FROM node:18
+
+ARG NODE_ENV=development
+ENV NODE_ENV=${NODE_ENV}
+
+#Create Work Directory
+WORKDIR /usr/src/trafficCam
+
+#Copy package.json files
+#To install app dependencies 
+COPY package*.json ./
+
+
+#Copy files
+COPY . .
+
+#Expose port
+EXPOSE 8000
+
+CMD bash -c "npm install && npm run dev"
