@@ -10,7 +10,6 @@ services:
       volumes:
         - db-data:/etc/data
 
-
   mysqldb:
     container_name: userDB
     image: mysql

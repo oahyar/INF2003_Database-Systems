@@ -14,18 +14,22 @@ app.use(
     })
 );
 
-// let port = process.env.PORT || 8080;
-// let host = process.env.HOST || '0.0.0.0';
-const port = config.port || 8000;
+const port = config.port || 8080;
 const host = config.host || '0.0.0.0';
+const router = express.Router();
 
 // const pageRouter = express.Router();
-// app.use(helmet());
-// app.use(express.static(path.join(__dirname, 'views')));
+app.use(express.static(path.join(__dirname, 'views')));
 app.use(bodyParser.json());
 app.use(cookieParser());
 app.set('views', path.join(__dirname, 'views'));
 app.use('/public', express.static('public'));
+
+router.get('/', function (req, res) {
+    res.render('index');
+});
+
+
 
 // // Global Error Handler
 // error handler
