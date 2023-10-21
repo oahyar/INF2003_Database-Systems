@@ -87,8 +87,9 @@ def mergeJsonFiles(inputArray, outputFilePath):                                 
 
     for filePath in inputArray:
         with open('cleanedData/cleaned_twice_' + filePath, 'r') as f:
-            data = json.load(f)
-            mergedFeatures.extend(data.get("features", []))
+            geoJsonData = json.load(f)
+            geoJsonData = sorted(geoJsonData["features"], key=lambda feature: feature.get("properties", {}).get("ID", ""))
+            mergedFeatures.extend(geoJsonData)
 
     mergedData = {"features": mergedFeatures}
 

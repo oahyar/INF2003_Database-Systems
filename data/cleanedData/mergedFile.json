@@ -4,1104 +4,6 @@
             "type": "Feature",
             "properties": {
                 "Type": 1,
-                "ID": 90,
-                "ROAD_NAME": "Airport Road",
-                "DIRECTION": "Macpherson Road",
-                "DESCP": "Airport Road by Ubi Road 2"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.894260999996,
-                    1.33571099999885,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 91,
-                "ROAD_NAME": "Boon Lay Dr",
-                "DIRECTION": "Boon Lay Way",
-                "DESCP": "Boon Lay Dr by Corporation Road"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.715758,
-                    1.34568800000293,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 92,
-                "ROAD_NAME": "Rivervale Drive",
-                "DIRECTION": "Sengkang East Avenue",
-                "DESCP": "Rivervale Drive by Sengkang East Way"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.906270000002,
-                    1.38878000000442,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 93,
-                "ROAD_NAME": "Tampines Avenue 5",
-                "DIRECTION": "Simei Avenue",
-                "DESCP": "Tampines Avenue 5 by Tampines Street 71"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.935987999998,
-                    1.35594500000259,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 94,
-                "ROAD_NAME": "Tiong Bahru",
-                "DIRECTION": "Outram Road",
-                "DESCP": "Tiong Bahru by Lower Delta Road"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.825026999998,
-                    1.2864870000018,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 95,
-                "ROAD_NAME": "Tampines Avenue 5",
-                "DIRECTION": "Tampines Avenue 10",
-                "DESCP": "Tampines Avenue 5 by Tampines Street 71"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.936534999996,
-                    1.35603499999529,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 96,
-                "ROAD_NAME": "Pasir Ris Drive 12",
-                "DIRECTION": "Tampines Avenue 10",
-                "DESCP": "Pasir Ris Drive 12 by (Exit) TPE"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.932204999998,
-                    1.37590899999889,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 97,
-                "ROAD_NAME": "Bukit Batok Road",
-                "DIRECTION": "PIE",
-                "DESCP": "Bukit Batok Road by Bt Batok West Avenue 2"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.742274999998,
-                    1.3630049999982,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 98,
-                "ROAD_NAME": "Lor Chuan",
-                "DIRECTION": "Boundary Road",
-                "DESCP": "Lor Chuan by Serangoon Avenue 2"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.867508000003,
-                    1.35537399999775,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 99,
-                "ROAD_NAME": "Ang Mo Kio Avenue 1",
-                "DIRECTION": "Boundary Road",
-                "DESCP": "Ang Mo Kio Avenue 1 by Lor Chuan"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.863991999997,
-                    1.35403299999744,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 100,
-                "ROAD_NAME": "Hougang Avenue 3",
-                "DIRECTION": "Eunos Link",
-                "DESCP": "Hougang Avenue 3 by Defu Avenue 1"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.890494999999,
-                    1.34621099999786,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 101,
-                "ROAD_NAME": "Upper Thomson Road",
-                "DIRECTION": "Thomson Road",
-                "DESCP": "Upper Thomson Road by Ang Mo Kio Avenue 1"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.828404999996,
-                    1.36824099999989,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 102,
-                "ROAD_NAME": "Admiralty Road",
-                "DIRECTION": "Woodlands Centre Road",
-                "DESCP": "Admiralty Road by Marsiling Lane"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.776999999996,
-                    1.44505600000504,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 103,
-                "ROAD_NAME": "Jurong West Avenue 4",
-                "DIRECTION": "Pioneer Road North",
-                "DESCP": "Jurong West Avenue 4 by Jurong West St 64"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.702782000002,
-                    1.34579299999739,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 104,
-                "ROAD_NAME": "Canberra Link",
-                "DIRECTION": "Yishun Avenue 2",
-                "DESCP": "Canberra Link by Yishun Industrial Park A"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.830739999997,
-                    1.44192000000048,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 105,
-                "ROAD_NAME": "Jln Eunos",
-                "DIRECTION": "Hougang Avenue 3",
-                "DESCP": "Jln Eunos by PIE"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.905538,
-                    1.32567000000335,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 106,
-                "ROAD_NAME": "Toh Tuck Avenue",
-                "DIRECTION": "PIE",
-                "DESCP": "Toh Tuck Avenue by Toh Tuck Link"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.758466,
-                    1.33052699999726,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 107,
-                "ROAD_NAME": "Buangkok Green",
-                "DIRECTION": "Ang Mo Kio Avenue 5",
-                "DESCP": "Buangkok Green by Hougang Street 51"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.887718,
-                    1.38080300000323,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 108,
-                "ROAD_NAME": "Hougang Avenue 3",
-                "DIRECTION": "Hougang Avenue 2",
-                "DESCP": "Hougang Avenue 3 by Lor Ah Soo"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.890403999996,
-                    1.35198399999972,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 109,
-                "ROAD_NAME": "Hougang Avenue 3",
-                "DIRECTION": "Euonos Link",
-                "DESCP": "Hougang Avenue 3 by Lor Ah Soo"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.890926,
-                    1.35237499999894,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 110,
-                "ROAD_NAME": "Toh Tuck Avenue",
-                "DIRECTION": "Boon Lay Way",
-                "DESCP": "Toh Tuck Avenue by Toh Tuck Link"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.759193000003,
-                    1.33075099999865,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 111,
-                "ROAD_NAME": "Pasir Ris Drive 1",
-                "DIRECTION": "Loyang Avenue",
-                "DESCP": "Pasir Ris Drive 1 by Pasir Ris Dr 4"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.959473000001,
-                    1.36810799999651,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 112,
-                "ROAD_NAME": "Canberra Road",
-                "DIRECTION": "Sembawang Road",
-                "DESCP": "Canberra Road by Sembawang Vista"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.822668999996,
-                    1.44765000000037,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 113,
-                "ROAD_NAME": "Bukit Panjang Road",
-                "DIRECTION": "Choa Chu Kang Rd",
-                "DESCP": "Bukit Panjang Rd by Pending Rd"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.772112999997,
-                    1.37713800000136,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 114,
-                "ROAD_NAME": "Pioneer Road North",
-                "DIRECTION": "AYE",
-                "DESCP": "Pioneer Road North by Jurong West Avenue 5"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.693062000001,
-                    1.34229500000208,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 115,
-                "ROAD_NAME": "Brickland Road",
-                "DIRECTION": "Bukit Batok Road",
-                "DESCP": "Brickland Road x Choa Chu Kang Grove"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.746263000002,
-                    1.37108299999954,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 116,
-                "ROAD_NAME": "Brickland Road",
-                "DIRECTION": "Bukit Batok Road",
-                "DESCP": "Brickland Road by Choa Chu Kang Avenue 3"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.735373999997,
-                    1.37630600000231,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 117,
-                "ROAD_NAME": "Bishan Street 11",
-                "DIRECTION": "Bishan Street 21",
-                "DESCP": "Bishan Street 11 by Bishan St 12"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.850052000004,
-                    1.34780399999979,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 118,
-                "ROAD_NAME": "Pioneer Road North",
-                "DIRECTION": "PIE",
-                "DESCP": "Pioneer Road North by Jurong West Avenue 5"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.693369000002,
-                    1.34176699999901,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 119,
-                "ROAD_NAME": "Bukit Panjang Road",
-                "DIRECTION": "BKE",
-                "DESCP": "Bukit Panjang Road by Gangsa Road"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.766982999996,
-                    1.37979300000066,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 125,
-                "ROAD_NAME": "Dunearn Road",
-                "DIRECTION": "Bukit Timah Road",
-                "DESCP": "Dunearn Road by Kheam Hock Road"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.819582000004,
-                    1.32290100000096,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 126,
-                "ROAD_NAME": "Fernvale Road",
-                "DIRECTION": "Fernvale Road (end)",
-                "DESCP": "Fernvale Road by Sengkang West Avenue"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.875685999997,
-                    1.3910300000013,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 127,
-                "ROAD_NAME": "Punggol East",
-                "DIRECTION": "Punggol Drive",
-                "DESCP": "Punggol East by Punggol Central"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.916560000004,
-                    1.39537000000278,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 128,
-                "ROAD_NAME": "Sengkang East Drive",
-                "DIRECTION": "Punggol East",
-                "DESCP": "Sengkang East Drive by Sengkang East Avenue"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.903324999996,
-                    1.38160099999849,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 129,
-                "ROAD_NAME": "Compassvale Drive",
-                "DIRECTION": "Rivervale Lane",
-                "DESCP": "Compassvale Drive by Sengkang Central"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.894490999998,
-                    1.38890800000022,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 130,
-                "ROAD_NAME": "Sengkang East Way",
-                "DIRECTION": "Compassvale Road",
-                "DESCP": "Sengkang East Way by Sengkang Square"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.894780000002,
-                    1.39305999999675,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 131,
-                "ROAD_NAME": "Yio Chu Kang Road",
-                "DIRECTION": "Serangoon Garden Way",
-                "DESCP": "Yio Chu Kang Road by Yio Chu Kang Link"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.874321999997,
-                    1.35821400000325,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 132,
-                "ROAD_NAME": "Yishun Avenue 3",
-                "DIRECTION": "Yishun Avenue 2",
-                "DESCP": "Yishun Avenue 3 by Yishun Ring Road"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.831439999999,
-                    1.42301200000387,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 133,
-                "ROAD_NAME": "Woodlands Avenue 5",
-                "DIRECTION": "Woodlands Avenue 3",
-                "DESCP": "Woodlands Avenue 5 by Marsiling Rise"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.782950000004,
-                    1.43799999999887,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 134,
-                "ROAD_NAME": "Yio Chu Kang Road",
-                "DIRECTION": "Upp Thomson Road",
-                "DESCP": "Yio Chu Kang Road by Ang Mo Kio Avenue 5"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.834440000004,
-                    1.38101000000197,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 135,
-                "ROAD_NAME": "Thomson Road",
-                "DIRECTION": "City",
-                "DESCP": "Thomson Road by Marymount Road"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.837425999999,
-                    1.33948999999893,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 136,
-                "ROAD_NAME": "Still Road",
-                "DIRECTION": "Still Road South",
-                "DESCP": "Still Road by East Coast Road"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.908630000004,
-                    1.30836999999772,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 137,
-                "ROAD_NAME": "Telok Kurau Road",
-                "DIRECTION": "Changi Road",
-                "DESCP": "Telok Kurau Road by East Coast Road"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.912356999997,
-                    1.30887500000188,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 138,
-                "ROAD_NAME": "Marine Parade Road",
-                "DIRECTION": "Amber Road",
-                "DESCP": "Marine Parade Road by Marine Parade Central"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.906860000001,
-                    1.30371000000244,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 139,
-                "ROAD_NAME": "Still Road South",
-                "DIRECTION": "ECP",
-                "DESCP": "Still Road South by Marine Parade Road"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.910000000001,
-                    1.30581000000022,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 140,
-                "ROAD_NAME": "New Upp Changi Road",
-                "DIRECTION": "Changi Road",
-                "DESCP": "New Upp Changi Road by Siglap Road"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.920039999997,
-                    1.32133000000043,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 141,
-                "ROAD_NAME": "Tampines Avenue 4",
-                "DIRECTION": "Bedok Reservoir Road",
-                "DESCP": "Tampines Avenue 4 by Tampines Avenue 3"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.938270000003,
-                    1.34900000000168,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 142,
-                "ROAD_NAME": "Geylang East Central",
-                "DIRECTION": "Geylang East Avenue 1",
-                "DESCP": "Geylang East Central by Geylang East Avenue 2"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.888990000002,
-                    1.31922999999639,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 143,
-                "ROAD_NAME": "Victoria Street",
-                "DIRECTION": "Middle Road",
-                "DESCP": "Victoria Street by Bras Basah Road"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.852000000002,
-                    1.29586999999479,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 144,
-                "ROAD_NAME": "Tampines Avenue 7",
-                "DIRECTION": "Tampines Central 3",
-                "DESCP": "Tampines Avenue 7 by Tampines Avenue 4"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.946470000003,
-                    1.35664000000198,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 145,
-                "ROAD_NAME": "Marymount Road",
-                "DIRECTION": "Ang Mo Kio Avenue 1",
-                "DESCP": "Marymount Road by Sin Ming Avenue"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.841576000003,
-                    1.36040699999681,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 146,
-                "ROAD_NAME": "Yio Chu Kang Road",
-                "DIRECTION": "Boundary Road",
-                "DESCP": "Yio Chu Kang Road by Yio Chu Kang Link"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.874189999998,
-                    1.35853999999552,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 147,
-                "ROAD_NAME": "Adam Road",
-                "DIRECTION": "Farrer Road",
-                "DESCP": "Adam Road by Dunearn Road"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.813630000001,
-                    1.32402999999885,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 148,
-                "ROAD_NAME": "Tuas South Avenue 3",
-                "DIRECTION": "Tuas South Avenue 8",
-                "DESCP": "Tuas South Avenue 3 by Tuas South Avenue 6"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.624856999998,
-                    1.30361099999725,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 149,
-                "ROAD_NAME": "Mandai Road",
-                "DIRECTION": "Woodlands Road",
-                "DESCP": "Mandai Road by (into) BKE"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.772049000004,
-                    1.40977900000232,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 150,
-                "ROAD_NAME": "Serangoon Avenue 2",
-                "DIRECTION": "Serangoon Gardens",
-                "DESCP": "Serangoon Avenue 2 by Lorong Chuan"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.867746000002,
-                    1.35512600000161,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 151,
-                "ROAD_NAME": "Mandai Road",
-                "DIRECTION": "Jln ulu Sembawang",
-                "DESCP": "Mandai Road by Mandai Lake Road"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.778399999996,
-                    1.4109200000022,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 152,
-                "ROAD_NAME": "Jurong West Avenue 1",
-                "DIRECTION": "Jurong West Street 51",
-                "DESCP": "Jurong West Avenue 1 by Jurong West Street 42"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.717050000001,
-                    1.3504900000022,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 153,
-                "ROAD_NAME": "Jurong West Avenue 1",
-                "DIRECTION": "Corporation Road",
-                "DESCP": "Jurong West Avenue 1 by Jurong West Street 52"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.717325000001,
-                    1.35042600000104,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 154,
-                "ROAD_NAME": "West Coast Road",
-                "DIRECTION": "West Coast Link",
-                "DESCP": "West Coast Road by Clementi Avenue 2"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.763239999996,
-                    1.3067500000019,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
-                "ID": 155,
-                "ROAD_NAME": "West Coast Road",
-                "DIRECTION": "Jln Mas Kuning",
-                "DESCP": "West Coast Road by Clementi West Street 2"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    103.763550000002,
-                    1.30623999999747,
-                    0.0
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Type": 1,
                 "ID": 1,
                 "ROAD_NAME": "Victoria Street",
                 "DIRECTION": "Lavender Street",
@@ -2704,6 +1606,546 @@
             "type": "Feature",
             "properties": {
                 "Type": 1,
+                "ID": 90,
+                "ROAD_NAME": "Airport Road",
+                "DIRECTION": "Macpherson Road",
+                "DESCP": "Airport Road by Ubi Road 2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.894260999996,
+                    1.33571099999885,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 91,
+                "ROAD_NAME": "Boon Lay Dr",
+                "DIRECTION": "Boon Lay Way",
+                "DESCP": "Boon Lay Dr by Corporation Road"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.715758,
+                    1.34568800000293,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 92,
+                "ROAD_NAME": "Rivervale Drive",
+                "DIRECTION": "Sengkang East Avenue",
+                "DESCP": "Rivervale Drive by Sengkang East Way"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.906270000002,
+                    1.38878000000442,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 93,
+                "ROAD_NAME": "Tampines Avenue 5",
+                "DIRECTION": "Simei Avenue",
+                "DESCP": "Tampines Avenue 5 by Tampines Street 71"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.935987999998,
+                    1.35594500000259,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 94,
+                "ROAD_NAME": "Tiong Bahru",
+                "DIRECTION": "Outram Road",
+                "DESCP": "Tiong Bahru by Lower Delta Road"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.825026999998,
+                    1.2864870000018,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 95,
+                "ROAD_NAME": "Tampines Avenue 5",
+                "DIRECTION": "Tampines Avenue 10",
+                "DESCP": "Tampines Avenue 5 by Tampines Street 71"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.936534999996,
+                    1.35603499999529,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 96,
+                "ROAD_NAME": "Pasir Ris Drive 12",
+                "DIRECTION": "Tampines Avenue 10",
+                "DESCP": "Pasir Ris Drive 12 by (Exit) TPE"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.932204999998,
+                    1.37590899999889,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 97,
+                "ROAD_NAME": "Bukit Batok Road",
+                "DIRECTION": "PIE",
+                "DESCP": "Bukit Batok Road by Bt Batok West Avenue 2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.742274999998,
+                    1.3630049999982,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 98,
+                "ROAD_NAME": "Lor Chuan",
+                "DIRECTION": "Boundary Road",
+                "DESCP": "Lor Chuan by Serangoon Avenue 2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.867508000003,
+                    1.35537399999775,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 99,
+                "ROAD_NAME": "Ang Mo Kio Avenue 1",
+                "DIRECTION": "Boundary Road",
+                "DESCP": "Ang Mo Kio Avenue 1 by Lor Chuan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.863991999997,
+                    1.35403299999744,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 100,
+                "ROAD_NAME": "Hougang Avenue 3",
+                "DIRECTION": "Eunos Link",
+                "DESCP": "Hougang Avenue 3 by Defu Avenue 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.890494999999,
+                    1.34621099999786,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 101,
+                "ROAD_NAME": "Upper Thomson Road",
+                "DIRECTION": "Thomson Road",
+                "DESCP": "Upper Thomson Road by Ang Mo Kio Avenue 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.828404999996,
+                    1.36824099999989,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 102,
+                "ROAD_NAME": "Admiralty Road",
+                "DIRECTION": "Woodlands Centre Road",
+                "DESCP": "Admiralty Road by Marsiling Lane"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.776999999996,
+                    1.44505600000504,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 103,
+                "ROAD_NAME": "Jurong West Avenue 4",
+                "DIRECTION": "Pioneer Road North",
+                "DESCP": "Jurong West Avenue 4 by Jurong West St 64"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.702782000002,
+                    1.34579299999739,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 104,
+                "ROAD_NAME": "Canberra Link",
+                "DIRECTION": "Yishun Avenue 2",
+                "DESCP": "Canberra Link by Yishun Industrial Park A"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.830739999997,
+                    1.44192000000048,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 105,
+                "ROAD_NAME": "Jln Eunos",
+                "DIRECTION": "Hougang Avenue 3",
+                "DESCP": "Jln Eunos by PIE"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.905538,
+                    1.32567000000335,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 106,
+                "ROAD_NAME": "Toh Tuck Avenue",
+                "DIRECTION": "PIE",
+                "DESCP": "Toh Tuck Avenue by Toh Tuck Link"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.758466,
+                    1.33052699999726,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 107,
+                "ROAD_NAME": "Buangkok Green",
+                "DIRECTION": "Ang Mo Kio Avenue 5",
+                "DESCP": "Buangkok Green by Hougang Street 51"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.887718,
+                    1.38080300000323,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 108,
+                "ROAD_NAME": "Hougang Avenue 3",
+                "DIRECTION": "Hougang Avenue 2",
+                "DESCP": "Hougang Avenue 3 by Lor Ah Soo"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.890403999996,
+                    1.35198399999972,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 109,
+                "ROAD_NAME": "Hougang Avenue 3",
+                "DIRECTION": "Euonos Link",
+                "DESCP": "Hougang Avenue 3 by Lor Ah Soo"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.890926,
+                    1.35237499999894,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 110,
+                "ROAD_NAME": "Toh Tuck Avenue",
+                "DIRECTION": "Boon Lay Way",
+                "DESCP": "Toh Tuck Avenue by Toh Tuck Link"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.759193000003,
+                    1.33075099999865,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 111,
+                "ROAD_NAME": "Pasir Ris Drive 1",
+                "DIRECTION": "Loyang Avenue",
+                "DESCP": "Pasir Ris Drive 1 by Pasir Ris Dr 4"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.959473000001,
+                    1.36810799999651,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 112,
+                "ROAD_NAME": "Canberra Road",
+                "DIRECTION": "Sembawang Road",
+                "DESCP": "Canberra Road by Sembawang Vista"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.822668999996,
+                    1.44765000000037,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 113,
+                "ROAD_NAME": "Bukit Panjang Road",
+                "DIRECTION": "Choa Chu Kang Rd",
+                "DESCP": "Bukit Panjang Rd by Pending Rd"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.772112999997,
+                    1.37713800000136,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 114,
+                "ROAD_NAME": "Pioneer Road North",
+                "DIRECTION": "AYE",
+                "DESCP": "Pioneer Road North by Jurong West Avenue 5"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.693062000001,
+                    1.34229500000208,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 115,
+                "ROAD_NAME": "Brickland Road",
+                "DIRECTION": "Bukit Batok Road",
+                "DESCP": "Brickland Road x Choa Chu Kang Grove"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.746263000002,
+                    1.37108299999954,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 116,
+                "ROAD_NAME": "Brickland Road",
+                "DIRECTION": "Bukit Batok Road",
+                "DESCP": "Brickland Road by Choa Chu Kang Avenue 3"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.735373999997,
+                    1.37630600000231,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 117,
+                "ROAD_NAME": "Bishan Street 11",
+                "DIRECTION": "Bishan Street 21",
+                "DESCP": "Bishan Street 11 by Bishan St 12"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.850052000004,
+                    1.34780399999979,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 118,
+                "ROAD_NAME": "Pioneer Road North",
+                "DIRECTION": "PIE",
+                "DESCP": "Pioneer Road North by Jurong West Avenue 5"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.693369000002,
+                    1.34176699999901,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 119,
+                "ROAD_NAME": "Bukit Panjang Road",
+                "DIRECTION": "BKE",
+                "DESCP": "Bukit Panjang Road by Gangsa Road"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.766982999996,
+                    1.37979300000066,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
                 "ID": 120,
                 "ROAD_NAME": "Sembawang Drive",
                 "DIRECTION": "Admiralty Road West",
@@ -2786,6 +2228,564 @@
                 "coordinates": [
                     103.930249999996,
                     1.3519,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 125,
+                "ROAD_NAME": "Dunearn Road",
+                "DIRECTION": "Bukit Timah Road",
+                "DESCP": "Dunearn Road by Kheam Hock Road"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.819582000004,
+                    1.32290100000096,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 126,
+                "ROAD_NAME": "Fernvale Road",
+                "DIRECTION": "Fernvale Road (end)",
+                "DESCP": "Fernvale Road by Sengkang West Avenue"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.875685999997,
+                    1.3910300000013,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 127,
+                "ROAD_NAME": "Punggol East",
+                "DIRECTION": "Punggol Drive",
+                "DESCP": "Punggol East by Punggol Central"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.916560000004,
+                    1.39537000000278,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 128,
+                "ROAD_NAME": "Sengkang East Drive",
+                "DIRECTION": "Punggol East",
+                "DESCP": "Sengkang East Drive by Sengkang East Avenue"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.903324999996,
+                    1.38160099999849,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 129,
+                "ROAD_NAME": "Compassvale Drive",
+                "DIRECTION": "Rivervale Lane",
+                "DESCP": "Compassvale Drive by Sengkang Central"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.894490999998,
+                    1.38890800000022,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 130,
+                "ROAD_NAME": "Sengkang East Way",
+                "DIRECTION": "Compassvale Road",
+                "DESCP": "Sengkang East Way by Sengkang Square"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.894780000002,
+                    1.39305999999675,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 131,
+                "ROAD_NAME": "Yio Chu Kang Road",
+                "DIRECTION": "Serangoon Garden Way",
+                "DESCP": "Yio Chu Kang Road by Yio Chu Kang Link"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.874321999997,
+                    1.35821400000325,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 132,
+                "ROAD_NAME": "Yishun Avenue 3",
+                "DIRECTION": "Yishun Avenue 2",
+                "DESCP": "Yishun Avenue 3 by Yishun Ring Road"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.831439999999,
+                    1.42301200000387,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 133,
+                "ROAD_NAME": "Woodlands Avenue 5",
+                "DIRECTION": "Woodlands Avenue 3",
+                "DESCP": "Woodlands Avenue 5 by Marsiling Rise"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.782950000004,
+                    1.43799999999887,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 134,
+                "ROAD_NAME": "Yio Chu Kang Road",
+                "DIRECTION": "Upp Thomson Road",
+                "DESCP": "Yio Chu Kang Road by Ang Mo Kio Avenue 5"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.834440000004,
+                    1.38101000000197,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 135,
+                "ROAD_NAME": "Thomson Road",
+                "DIRECTION": "City",
+                "DESCP": "Thomson Road by Marymount Road"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.837425999999,
+                    1.33948999999893,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 136,
+                "ROAD_NAME": "Still Road",
+                "DIRECTION": "Still Road South",
+                "DESCP": "Still Road by East Coast Road"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.908630000004,
+                    1.30836999999772,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 137,
+                "ROAD_NAME": "Telok Kurau Road",
+                "DIRECTION": "Changi Road",
+                "DESCP": "Telok Kurau Road by East Coast Road"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.912356999997,
+                    1.30887500000188,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 138,
+                "ROAD_NAME": "Marine Parade Road",
+                "DIRECTION": "Amber Road",
+                "DESCP": "Marine Parade Road by Marine Parade Central"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.906860000001,
+                    1.30371000000244,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 139,
+                "ROAD_NAME": "Still Road South",
+                "DIRECTION": "ECP",
+                "DESCP": "Still Road South by Marine Parade Road"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.910000000001,
+                    1.30581000000022,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 140,
+                "ROAD_NAME": "New Upp Changi Road",
+                "DIRECTION": "Changi Road",
+                "DESCP": "New Upp Changi Road by Siglap Road"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.920039999997,
+                    1.32133000000043,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 141,
+                "ROAD_NAME": "Tampines Avenue 4",
+                "DIRECTION": "Bedok Reservoir Road",
+                "DESCP": "Tampines Avenue 4 by Tampines Avenue 3"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.938270000003,
+                    1.34900000000168,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 142,
+                "ROAD_NAME": "Geylang East Central",
+                "DIRECTION": "Geylang East Avenue 1",
+                "DESCP": "Geylang East Central by Geylang East Avenue 2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.888990000002,
+                    1.31922999999639,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 143,
+                "ROAD_NAME": "Victoria Street",
+                "DIRECTION": "Middle Road",
+                "DESCP": "Victoria Street by Bras Basah Road"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.852000000002,
+                    1.29586999999479,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 144,
+                "ROAD_NAME": "Tampines Avenue 7",
+                "DIRECTION": "Tampines Central 3",
+                "DESCP": "Tampines Avenue 7 by Tampines Avenue 4"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.946470000003,
+                    1.35664000000198,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 145,
+                "ROAD_NAME": "Marymount Road",
+                "DIRECTION": "Ang Mo Kio Avenue 1",
+                "DESCP": "Marymount Road by Sin Ming Avenue"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.841576000003,
+                    1.36040699999681,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 146,
+                "ROAD_NAME": "Yio Chu Kang Road",
+                "DIRECTION": "Boundary Road",
+                "DESCP": "Yio Chu Kang Road by Yio Chu Kang Link"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.874189999998,
+                    1.35853999999552,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 147,
+                "ROAD_NAME": "Adam Road",
+                "DIRECTION": "Farrer Road",
+                "DESCP": "Adam Road by Dunearn Road"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.813630000001,
+                    1.32402999999885,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 148,
+                "ROAD_NAME": "Tuas South Avenue 3",
+                "DIRECTION": "Tuas South Avenue 8",
+                "DESCP": "Tuas South Avenue 3 by Tuas South Avenue 6"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.624856999998,
+                    1.30361099999725,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 149,
+                "ROAD_NAME": "Mandai Road",
+                "DIRECTION": "Woodlands Road",
+                "DESCP": "Mandai Road by (into) BKE"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.772049000004,
+                    1.40977900000232,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 150,
+                "ROAD_NAME": "Serangoon Avenue 2",
+                "DIRECTION": "Serangoon Gardens",
+                "DESCP": "Serangoon Avenue 2 by Lorong Chuan"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.867746000002,
+                    1.35512600000161,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 151,
+                "ROAD_NAME": "Mandai Road",
+                "DIRECTION": "Jln ulu Sembawang",
+                "DESCP": "Mandai Road by Mandai Lake Road"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.778399999996,
+                    1.4109200000022,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 152,
+                "ROAD_NAME": "Jurong West Avenue 1",
+                "DIRECTION": "Jurong West Street 51",
+                "DESCP": "Jurong West Avenue 1 by Jurong West Street 42"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.717050000001,
+                    1.3504900000022,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 153,
+                "ROAD_NAME": "Jurong West Avenue 1",
+                "DIRECTION": "Corporation Road",
+                "DESCP": "Jurong West Avenue 1 by Jurong West Street 52"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.717325000001,
+                    1.35042600000104,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 154,
+                "ROAD_NAME": "West Coast Road",
+                "DIRECTION": "West Coast Link",
+                "DESCP": "West Coast Road by Clementi Avenue 2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.763239999996,
+                    1.3067500000019,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Type": 1,
+                "ID": 155,
+                "ROAD_NAME": "West Coast Road",
+                "DIRECTION": "Jln Mas Kuning",
+                "DESCP": "West Coast Road by Clementi West Street 2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.763550000002,
+                    1.30623999999747,
                     0.0
                 ]
             }
