@@ -10,15 +10,11 @@
         {
             "type": "Feature",
             "properties": {
-                "Type": "FSC",
-                "ID": "1",
+                "Type": 2,
+                "ID": 1,
                 "ROAD_NAME": "Yishun Avenue 2",
                 "DIRECTION": "Lentor Avenue",
-                "LATITUDE": "1.415298",
-                "LONGITUDE": "103.832285",
-                "DESCP": "Static Speed Camera",
-                "INC_CRC": "53E516E79B0CE6BC",
-                "FMEL_UPD_D": "20161230201814"
+                "DESCP": "Static Speed Camera"
             },
             "geometry": {
                 "type": "Point",
@@ -32,15 +28,11 @@
         {
             "type": "Feature",
             "properties": {
-                "Type": "FSC",
-                "ID": "2",
+                "Type": 2,
+                "ID": 2,
                 "ROAD_NAME": "Yishun Avenue 2",
                 "DIRECTION": "Sembawang Road",
-                "LATITUDE": "1.415325",
-                "LONGITUDE": "103.832312",
-                "DESCP": "Static Speed Camera",
-                "INC_CRC": "831CD792315CDEE5",
-                "FMEL_UPD_D": "20161230201824"
+                "DESCP": "Static Speed Camera"
             },
             "geometry": {
                 "type": "Point",
@@ -54,15 +46,11 @@
         {
             "type": "Feature",
             "properties": {
-                "Type": "FSC",
-                "ID": "3",
+                "Type": 2,
+                "ID": 3,
                 "ROAD_NAME": "Bukit Batok Road",
                 "DIRECTION": "Chua Chu Kang Road",
-                "LATITUDE": "1.36093",
-                "LONGITUDE": "103.74079",
-                "DESCP": "Static Speed Camera",
-                "INC_CRC": "BF6514AB22EB0793",
-                "FMEL_UPD_D": "20161230201824"
+                "DESCP": "Static Speed Camera"
             },
             "geometry": {
                 "type": "Point",
@@ -76,15 +64,11 @@
         {
             "type": "Feature",
             "properties": {
-                "Type": "FSC",
-                "ID": "4",
+                "Type": 2,
+                "ID": 4,
                 "ROAD_NAME": "Bukit Batok Road",
                 "DIRECTION": "Jurong Town Hall Road",
-                "LATITUDE": "1.36093",
-                "LONGITUDE": "103.74079",
-                "DESCP": "Static Speed Camera",
-                "INC_CRC": "BF6514ABA1AAC682",
-                "FMEL_UPD_D": "20161230201824"
+                "DESCP": "Static Speed Camera"
             },
             "geometry": {
                 "type": "Point",
@@ -98,15 +82,11 @@
         {
             "type": "Feature",
             "properties": {
-                "Type": "FSC",
-                "ID": "5",
+                "Type": 2,
+                "ID": 5,
                 "ROAD_NAME": "Boon Lay Way",
                 "DIRECTION": "Commonwealth Avenue West",
-                "LATITUDE": "1.344737",
-                "LONGITUDE": "103.725491",
-                "DESCP": "Static Speed Camera",
-                "INC_CRC": "F1D8EB6D41FCD810",
-                "FMEL_UPD_D": "20161230201824"
+                "DESCP": "Static Speed Camera"
             },
             "geometry": {
                 "type": "Point",
@@ -120,15 +100,11 @@
         {
             "type": "Feature",
             "properties": {
-                "Type": "FSC",
-                "ID": "6",
+                "Type": 2,
+                "ID": 6,
                 "ROAD_NAME": "Boon Lay Way",
                 "DIRECTION": "Jalan Boon Lay",
-                "LATITUDE": "1.344746",
-                "LONGITUDE": "103.725518",
-                "DESCP": "Static Speed Camera",
-                "INC_CRC": "17697E553053A0C5",
-                "FMEL_UPD_D": "20161230201824"
+                "DESCP": "Static Speed Camera"
             },
             "geometry": {
                 "type": "Point",
@@ -142,15 +118,11 @@
         {
             "type": "Feature",
             "properties": {
-                "Type": "FSC",
-                "ID": "7",
+                "Type": 2,
+                "ID": 7,
                 "ROAD_NAME": "Ayer Rajah Expressway",
                 "DIRECTION": "City",
-                "LATITUDE": "1.298237",
-                "LONGITUDE": "103.781679",
-                "DESCP": "Static Speed Camera",
-                "INC_CRC": "3C7FDBB0AC0B8BB7",
-                "FMEL_UPD_D": "20161230201824"
+                "DESCP": "Static Speed Camera"
             },
             "geometry": {
                 "type": "Point",
@@ -164,15 +136,11 @@
         {
             "type": "Feature",
             "properties": {
-                "Type": "FSC",
-                "ID": "8",
+                "Type": 2,
+                "ID": 8,
                 "ROAD_NAME": "Ayer Rajah Expressway",
                 "DIRECTION": "Jurong",
-                "LATITUDE": "1.298219",
-                "LONGITUDE": "103.781724",
-                "DESCP": "Static Speed Camera",
-                "INC_CRC": "BCFE09CB9AFD40EB",
-                "FMEL_UPD_D": "20161230201824"
+                "DESCP": "Static Speed Camera"
             },
             "geometry": {
                 "type": "Point",
@@ -186,15 +154,11 @@
         {
             "type": "Feature",
             "properties": {
-                "Type": "FSC",
-                "ID": "9",
+                "Type": 2,
+                "ID": 9,
                 "ROAD_NAME": "Bukit Timah Expressway",
                 "DIRECTION": "Pan Island Expressway",
-                "LATITUDE": "1.382324",
-                "LONGITUDE": "103.775486",
-                "DESCP": "Static Speed Camera",
-                "INC_CRC": "AD87DC4C8A251AF9",
-                "FMEL_UPD_D": "20161230201824"
+                "DESCP": "Static Speed Camera"
             },
             "geometry": {
                 "type": "Point",
@@ -208,15 +172,11 @@
         {
             "type": "Feature",
             "properties": {
-                "Type": "FSC",
-                "ID": "10",
+                "Type": 2,
+                "ID": 10,
                 "ROAD_NAME": "Bukit Timah Expressway",
                 "DIRECTION": "Woodlands",
-                "LATITUDE": "1.382225",
-                "LONGITUDE": "103.775522",
-                "DESCP": "Static Speed Camera",
-                "INC_CRC": "480333868BC73E77",
-                "FMEL_UPD_D": "20161230201824"
+                "DESCP": "Static Speed Camera"
             },
             "geometry": {
                 "type": "Point",
@@ -230,15 +190,11 @@
         {
             "type": "Feature",
             "properties": {
-                "Type": "FSC",
-                "ID": "11",
+                "Type": 2,
+                "ID": 11,
                 "ROAD_NAME": "Pan Island Expressway",
                 "DIRECTION": "East Coast Parkway",
-                "LATITUDE": "1.33698",
-                "LONGITUDE": "103.80898",
-                "DESCP": "Static Speed Camera",
-                "INC_CRC": "94F560317A40583A",
-                "FMEL_UPD_D": "20161230201824"
+                "DESCP": "Static Speed Camera"
             },
             "geometry": {
                 "type": "Point",
@@ -252,15 +208,11 @@
         {
             "type": "Feature",
             "properties": {
-                "Type": "FSC",
-                "ID": "12",
+                "Type": 2,
+                "ID": 12,
                 "ROAD_NAME": "Pan Island Expressway",
                 "DIRECTION": "Tuas",
-                "LATITUDE": "1.33698",
-                "LONGITUDE": "103.80898",
-                "DESCP": "Static Speed Camera",
-                "INC_CRC": "94F5603168DE9C14",
-                "FMEL_UPD_D": "20161230201824"
+                "DESCP": "Static Speed Camera"
             },
             "geometry": {
                 "type": "Point",
@@ -274,15 +226,11 @@
         {
             "type": "Feature",
             "properties": {
-                "Type": "FSC",
-                "ID": "13",
+                "Type": 2,
+                "ID": 13,
                 "ROAD_NAME": "Seletar Expressway",
                 "DIRECTION": "Bukit Timah Expressway",
-                "LATITUDE": "1.408307",
-                "LONGITUDE": "103.808113",
-                "DESCP": "Static Speed Camera",
-                "INC_CRC": "D8191F90722494AA",
-                "FMEL_UPD_D": "20161230201824"
+                "DESCP": "Static Speed Camera"
             },
             "geometry": {
                 "type": "Point",
@@ -296,15 +244,11 @@
         {
             "type": "Feature",
             "properties": {
-                "Type": "FSC",
-                "ID": "14",
+                "Type": 2,
+                "ID": 14,
                 "ROAD_NAME": "Seletar Expressway",
                 "DIRECTION": "Central Expressway",
-                "LATITUDE": "1.408199",
-                "LONGITUDE": "103.808149",
-                "DESCP": "Static Speed Camera",
-                "INC_CRC": "0617F009CF7FF6F7",
-                "FMEL_UPD_D": "20161230201824"
+                "DESCP": "Static Speed Camera"
             },
             "geometry": {
                 "type": "Point",
@@ -318,15 +262,11 @@
         {
             "type": "Feature",
             "properties": {
-                "Type": "FSC",
-                "ID": "15",
+                "Type": 2,
+                "ID": 15,
                 "ROAD_NAME": "Upper Thomson Road",
                 "DIRECTION": "Lornie Road",
-                "LATITUDE": "1.386883",
-                "LONGITUDE": "103.820352",
-                "DESCP": "Static Speed Camera",
-                "INC_CRC": "E513F3AE4EB2430B",
-                "FMEL_UPD_D": "20161230201824"
+                "DESCP": "Static Speed Camera"
             },
             "geometry": {
                 "type": "Point",
@@ -340,15 +280,11 @@
         {
             "type": "Feature",
             "properties": {
-                "Type": "FSC",
-                "ID": "16",
+                "Type": 2,
+                "ID": 16,
                 "ROAD_NAME": "Upper Thomson Road",
                 "DIRECTION": "Sembawang Road",
-                "LATITUDE": "1.386865",
-                "LONGITUDE": "103.820397",
-                "DESCP": "Static Speed Camera",
-                "INC_CRC": "55BE96F1FD475495",
-                "FMEL_UPD_D": "20161230201824"
+                "DESCP": "Static Speed Camera"
             },
             "geometry": {
                 "type": "Point",
@@ -362,15 +298,11 @@
         {
             "type": "Feature",
             "properties": {
-                "Type": "FSC",
-                "ID": "17",
+                "Type": 2,
+                "ID": 17,
                 "ROAD_NAME": "Yishun Avenue 1",
                 "DIRECTION": "Lentor Avenue",
-                "LATITUDE": "1.413896",
-                "LONGITUDE": "103.841316",
-                "DESCP": "Static Speed Camera",
-                "INC_CRC": "1B33115A8536DCDF",
-                "FMEL_UPD_D": "20161230201824"
+                "DESCP": "Static Speed Camera"
             },
             "geometry": {
                 "type": "Point",
@@ -384,15 +316,11 @@
         {
             "type": "Feature",
             "properties": {
-                "Type": "FSC",
-                "ID": "18",
+                "Type": 2,
+                "ID": 18,
                 "ROAD_NAME": "Loyang Avenue",
                 "DIRECTION": "Tampines Avenue 7",
-                "LATITUDE": "1.37313",
-                "LONGITUDE": "103.97397",
-                "DESCP": "Static Speed Camera",
-                "INC_CRC": "992C7BDD96255818",
-                "FMEL_UPD_D": "20161230201824"
+                "DESCP": "Static Speed Camera"
             },
             "geometry": {
                 "type": "Point",
@@ -406,15 +334,11 @@
         {
             "type": "Feature",
             "properties": {
-                "Type": "FSC",
-                "ID": "19",
+                "Type": 2,
+                "ID": 19,
                 "ROAD_NAME": "Holland Road",
                 "DIRECTION": "Ulu Pandan Road",
-                "LATITUDE": "1.307221",
-                "LONGITUDE": "103.811638",
-                "DESCP": "Static Speed Camera",
-                "INC_CRC": "BF6269ABA4AB473B",
-                "FMEL_UPD_D": "20161230201824"
+                "DESCP": "Static Speed Camera"
             },
             "geometry": {
                 "type": "Point",
@@ -428,15 +352,11 @@
         {
             "type": "Feature",
             "properties": {
-                "Type": "FSC",
-                "ID": "20",
+                "Type": 2,
+                "ID": 20,
                 "ROAD_NAME": "Holland Road",
                 "DIRECTION": "Napier Road",
-                "LATITUDE": "1.307201",
-                "LONGITUDE": "103.811668",
-                "DESCP": "Static Speed Camera",
-                "INC_CRC": "1A8CB0CA29DD302D",
-                "FMEL_UPD_D": "20161230201824"
+                "DESCP": "Static Speed Camera"
             },
             "geometry": {
                 "type": "Point",

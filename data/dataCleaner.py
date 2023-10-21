@@ -40,6 +40,13 @@ def splitDescription(descriptionString):                                        
                 i += 1                                                                              # Increase loop counter,
 
             attributeValue = attributeValue.rstrip()                                                # Strip trailing spaces,
+
+            try:                                                                                    # Try converting attribute value into integer,
+                attributeValue = int(attributeValue)
+
+            except ValueError:                                                                      # If ValueError is thrown then let it be,
+                attributeValue = attributeValue                                                     
+
             newAttributes[attributeName] = attributeValue                                           # Add new key - value pair to the new Json attributes dictionary
 
     return newAttributes                                                                            # Return the new Json attributes dictionary
@@ -56,10 +63,15 @@ def loadCleanedGeoJsonFile(inputFilePath, outputFilePath, cameraType):          
 
             newJsonAttributes = splitDescription(descriptionJsonAttribute)                          # Split the description attribute string into Json attributes
             propertiesJsonAttribute.pop("Description", None)                                        # Remove the description attribute entirely
-            propertiesJsonAttribute.pop("Name", None)                                        # Remove the description attribute entirely
+            propertiesJsonAttribute.pop("Name", None)                                               # Remove the description attribute entirely
             additionalJsonAttribute = {"Type":cameraType}
             propertiesJsonAttribute.update(additionalJsonAttribute)
             propertiesJsonAttribute.update(newJsonAttributes)                                       # Update properties attribute with new attributes
+            propertiesJsonAttribute.pop("INC_CRC", None)                                            # Remove the description attribute entirely
+            propertiesJsonAttribute.pop("FMEL_UPD_D", None)                                         # Remove the description attribute entirely
+            propertiesJsonAttribute.pop("LATITUDE", None)                                           # Remove the description attribute entirely
+            propertiesJsonAttribute.pop("LONGITUDE", None)                                          # Remove the description attribute entirely
+            
 
         with open(outputFilePath, 'w') as outputFile:                                               # Opening / creating output file
             json.dump(geoJsonData, outputFile, indent=4)                                            # Writing modified content to output file
@@ -88,7 +100,6 @@ def mergeJsonFiles(inputArray, outputFilePath):                                 
 
 listOfDelimiters = ["ID", "ROAD_NAME", "DIRECTION", "LATITUDE", "LONGITUDE", "DESCP", "INC_CRC", "FMEL_UPD_D"]
 listOfInputFiles = ['SingaporePoliceForceDigitalTrafficRedLightCameras.geojson', 'SingaporePoliceForceFixedSpeedCameras.geojson', 'SingaporePoliceForceMobileSpeedCameras.geojson']
-listOfCameraTypes = ['DTRLC', 'FSC', 'MSC']
 
 # for inputFile in listOfInputFiles:
 #     loadGeoJsonFile(inputFile, 'cleanedData/cleaned_' + inputFile)
@@ -96,6 +107,6 @@ listOfCameraTypes = ['DTRLC', 'FSC', 'MSC']
 
 for i in range(0, len(listOfInputFiles)):
     loadGeoJsonFile(listOfInputFiles[i], 'cleanedData/cleaned_' + listOfInputFiles[i])
-    loadCleanedGeoJsonFile('cleanedData/cleaned_' + listOfInputFiles[i], 'cleanedData/cleaned_twice_' + listOfInputFiles[i], listOfCameraTypes[i])
+    loadCleanedGeoJsonFile('cleanedData/cleaned_' + listOfInputFiles[i], 'cleanedData/cleaned_twice_' + listOfInputFiles[i], i+1)
 
 mergeJsonFiles(listOfInputFiles, 'cleanedData/mergedFile.json')
