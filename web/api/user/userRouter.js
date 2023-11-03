@@ -8,6 +8,6 @@ userRouter.get('/', authToken,userController.getUser)
 userRouter.post('/login', userController.login)
 userRouter.post('/register', userController.createUser)
 // userRouter.put('/updateUser', userController.editUser)
-// userRouter.delete('/deleteUser', userController.deleteUser)
+userRouter.delete('/deleteUser', userController.deleteUser)
 
 module.exports = userRouter;

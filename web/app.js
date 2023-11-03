@@ -6,7 +6,7 @@ const dbService = require('./services/dbServices');
 const apiV1Router = require('./api/routes');
 const config = require('./config/config');
 const cookieParser = require('cookie-parser');
-const { createTable, createUserTable, createCameraReportTable, createCameraApprovalTable, createTables } = require('./db/seed');
+const { createUserTable, createCameraReportTable, createCameraApprovalTable } = require('./db/seed');
 
 const app = express();
 app.use(
@@ -19,20 +19,22 @@ const port = config.port || 8080;
 const host = config.host || '0.0.0.0';
 
 const pageRouter = express.Router();
-app.use(express.static(path.join(__dirname, 'views')));
+// app.use(express.static(path.join(__dirname, '/views')));
+// app.set('view engine', 'ejs');
+app.engine('.html', require('ejs').renderFile); 
 app.use(bodyParser.json());
 app.use(cookieParser());
-app.set('views', path.join(__dirname, 'views'));
+// app.set('views', path.join(__dirname, 'views'));
 app.use('/public', express.static('public'));
 
 app.use('/api', apiV1Router);
 app.use('/', pageRouter);
 
 pageRouter.get('/', function (req, res) {
-    res.send("test");
+    res.render('index.html')
 });
 pageRouter.get('/test', function (req, res) {
-    res.send('Test')
+    res.render('test.html');
 });
 
 pageRouter.get('/seed/createTables',async function(req, res){
