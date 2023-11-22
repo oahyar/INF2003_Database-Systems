@@ -81,6 +81,25 @@
 
 <!-- JavaScript for form submission and validation -->
 <script>
+    document.getElementById('loginForm').onsubmit = function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+
+        // Check if the username and password match 'admin'
+        if(username === 'admin' && password === 'admin') {
+            // If they match, redirect to index.html
+            window.location.href = 'index.html';
+        } else {
+            // If they don't match, alert the user
+            alert('Invalid username or password. Please try again.');
+        }
+    };
+</script>
+
+
+<script>
     // JavaScript code remains the same...
 </script>
 
