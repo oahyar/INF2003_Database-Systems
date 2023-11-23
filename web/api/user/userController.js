@@ -1,7 +1,5 @@
 const bcrypt = require('bcrypt');
 const dbService = require('../../services/dbServices');
-const config = require('../../config/config');
-const jwt = require('jsonwebtoken');
 const { generateToken } = require('../../services/authentication');
 
 function getUser(req, res, next) {

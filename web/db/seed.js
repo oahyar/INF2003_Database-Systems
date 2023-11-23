@@ -1,11 +1,18 @@
 const dbService = require('../services/dbServices');
+const mongoose = require('mongoose');
+const cameraSchema = require('../api/camera/cameraSchema');
+const fs = require('fs');
 
-
+mongoose.connect('mongodb://devacc:devenv22!@127.0.0.1:27017/TraffiCam', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    authSource: 'TraffiCam',
+});
+//     'mongodb://devacc:devenv22!@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&authSource=TraffiCam'
 
 function createUserTable() {
-    console.log('Creating User...');
     try {
-        console.log("trying");
+        console.log('trying');
         const stmt =
             'CREATE TABLE userTable (userID INT AUTO_INCREMENT PRIMARY KEY,userRole INT NOT NULL,userPassword VARCHAR(255) NOT NULL,firstName VARCHAR(255) NOT NULL,lastName VARCHAR(255) NOT NULL,userEmail VARCHAR(255) NOT NULL)';
         dbService.pool.query(stmt);
@@ -35,10 +42,32 @@ function createCameraApprovalTable() {
     }
 }
 
+// TODO: Insert camera data
 
+function addCamerasToDB(filePath) {
+    fs.readFile(filePath, 'utf8', (err, data) => {
+        if (err) {
+            console.error('Error reading file:', err);
+            return;
+        }
+        const json = JSON.parse(data);
 
-// TODO: Insert data
+        // Assuming 'features' is the array you want to iterate over
+        if (json.features && Array.isArray(json.features)) {
+            json.features.forEach((cameraData) => {
+                const newCamera = new cameraSchema(cameraData);
+                newCamera
+                    .save()
+                    .then((doc) => console.log('Camera saved:', doc))
+                    .catch((err) => console.error('Error saving camera:', err));
+            });
+        } else {
+            console.error('No features array found in JSON file');
+        }
+    });
+}
 
+addCamerasToDB('./mergedFile.json');
 
 module.exports = {
     createUserTable,

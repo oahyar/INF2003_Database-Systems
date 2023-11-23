@@ -6,5 +6,4 @@ cameraRouter.get('/', authToken);
 cameraRouter.get('/:id', authToken);
 cameraRouter.post('/new-camera', authToken);
 
-
-module.exports = cameraRouter;
+module.exports = { cameraRouter };
