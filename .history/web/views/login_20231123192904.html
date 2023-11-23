@@ -91,20 +91,25 @@
         // Check if the username and password match 'admin'
         if(username === 'admin' && password === 'admin') {
             // If they match, redirect to index.html
-            localStorage.setItem('userRole', 'admin');
-   
-            window.location.href = 'index.html';
-
+            window.location.href = 'adminUser.html';
         } else if(username === 'user' && password === 'user') {
             // If username and password are 'user', redirect to regularUserPage.html
-            localStorage.setItem('userRole', 'user');
-            window.location.href = 'index.html';
+            window.location.href = 'regularUserPage.html';
         } else {
             // If they don't match, alert the user
             alert('Invalid username or password. Please try again.');
         }
     };
 </script>
+if(username === 'admin' && password === 'admin') {
+    localStorage.setItem('userRole', 'admin');
+    window.location.href = 'index.html';
+} else if(username === 'user' && password === 'user') {
+    localStorage.setItem('userRole', 'user');
+    window.location.href = 'regularUserPage.html';
+} else {
+    alert('Invalid username or password. Please try again.');
+}
 
 
 <script>

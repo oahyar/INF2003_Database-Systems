@@ -79,7 +79,7 @@
 <!-- Bootstrap Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-
+<!-- JavaScript for form submission and validation -->
 <!-- JavaScript for form submission and validation -->
 <script>
     document.getElementById('loginForm').onsubmit = function(event) {
@@ -91,14 +91,10 @@
         // Check if the username and password match 'admin'
         if(username === 'admin' && password === 'admin') {
             // If they match, redirect to index.html
-            localStorage.setItem('userRole', 'admin');
-   
             window.location.href = 'index.html';
-
         } else if(username === 'user' && password === 'user') {
             // If username and password are 'user', redirect to regularUserPage.html
-            localStorage.setItem('userRole', 'user');
-            window.location.href = 'index.html';
+            window.location.href = 'regularUserPage.html';
         } else {
             // If they don't match, alert the user
             alert('Invalid username or password. Please try again.');

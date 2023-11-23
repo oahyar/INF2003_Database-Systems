@@ -104,7 +104,7 @@
     </style>
 </head>
 <body>
-        
+
     <!-- Navigation Bar with Tabs and Username Dropdown -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
@@ -113,10 +113,10 @@
             <!-- Tabs -->
             <ul class="nav nav-tabs">
                 <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Home</a>
+                    <a class="nav-link active" data-bs-toggle="tab" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="adminUserPage.html">Reports</a>
+                    <a class="nav-link" data-bs-toggle="tab" href="adminUserPage.html">Reports</a>
                 </li>
             </ul>
             <!-- Toggler/collapsible Button -->
@@ -136,26 +136,13 @@
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="#">Account Settings</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="login.html">Sign Out</a></li>
+                            <li><a class="dropdown-item" href="#">Sign Out</a></li>
                         </ul>
                     </li>
                 </div>
             </div>
         </div>
     </nav>
-    <script>
-        window.onload = function() {
-            var userRole = localStorage.getItem('userRole');
-            var reportsTab = document.querySelector('.nav-link[href="adminUserPage.html"]');
-    
-            if (userRole === 'user') {
-                reportsTab.setAttribute('href', 'regularUserPage.html');
-            } else if (userRole === 'admin') {
-                reportsTab.setAttribute('href', 'adminUserPage.html');
-            }
-        };
-    </script>
-    
 </body>
 </html>
 

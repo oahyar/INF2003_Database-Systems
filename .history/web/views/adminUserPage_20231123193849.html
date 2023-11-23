@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <title>Database Project</title>
+        <!-- <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <div class="row">
+
+                <!-- My Personal Info -->
+                <div class="col-md-12">
+                    <div class="p-3 text-center bg-light">
+                        <h1>Welcome, Admin.</h1>
+                        <p class="lead">Manage your account here.</p>
+                        <button type="submit" class="btn btn-dark btn-sm">Reset Password</button>
+                        <button onclick="location.href='login.html';" class="btn btn-dark btn-sm">Log Out</button>
+
+                        <button type="submit" class="btn btn-danger btn-sm">Delete Account</button>
+                    </div>
+                </div>
+
+                <div class="mt-3">
+
+                    <!-- Tab Group Header Tabs -->
+                    <ul class="nav nav-tabs mt-5 mb-5" id="myTab" role="tablist">
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="cameras-tab" data-bs-toggle="tab" data-bs-target="#camerasTab" type="button" role="tab" aria-controls="expensesTab" aria-selected="true" style="color: black">All Cameras</button>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="users-tab" data-bs-toggle="tab" data-bs-target="#usersTab" type="button" role="tab" aria-controls="splitsTab" aria-selected="false" style="color: black">All Users</button>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="cameraReports-tab" data-bs-toggle="tab" data-bs-target="#cameraReportsTab" type="button" role="tab" aria-controls="portfolioTab" aria-selected="false" style="color: black">All Camera Reports</button>
+                        </li>
+
+                    </ul>
+    
+                    <!-- Tab Group Tabs' Content -->
+                    <div class="tab-content mt-3 mb-5" id="myTabContent">
+    
+                        <!-- All Cameras Tab Content -->
+                        <div class="tab-pane fade show active" id="camerasTab" role="tabpanel" aria-labelledby="cameras-tab">
+
+                            <!-- All Cameras -->
+                            <div class="col-md-12 mt-3">
+                        
+                                <div class="p-3 text-center bg-dark text-white">
+                        
+                                    <h1>All Cameras</h1>
+                                    <p class="lead">All cameras in your collection are shown here.</p>
+                        
+                                    <div class="table-responsive" style="max-height: 335px; overflow-y: auto;">
+                        
+                                        <table class="table table-secondary table-striped">
+                        
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Camera Type</th>
+                                                    <th scope="col">Camera ID</th>
+                                                    <th scope="col">Road Name</th>
+                                                    <th scope="col">Latitude</th>
+                                                    <th scope="col">Longitude</th>
+                                                    <th scope="col">Description</th>
+                                                    <th scope="col"></th>
+                                                    <th scope="col"></th>
+                                                </tr>
+                                            </thead>
+                        
+                                            <tbody>
+                                                <tr>
+                                                    <td>MSC</td>
+                                                    <td>1</td>
+                                                    <td>Airport Road</td>
+                                                    <td>1.00</td>
+                                                    <td>1.00</td>
+                                                    <td>Under flyover, over your mother</td>
+                                                    <td><button type="submit" class="btn btn-success btn-sm">Update Details</button></td>
+                                                    <td><button type="submit" class="btn btn-danger btn-sm">Delete</button></td>
+                                                </tr>
+                                            </tbody>
+                        
+                                        </table>
+                                                
+                                    </div>
+                        
+                                </div>
+                        
+                            </div>
+
+                            <!-- Add A Camera -->
+                            <div class="col-md-6 mt-3 mx-auto">
+
+                                <div class="p-3 text-center bg-dark text-white align-items-center">
+                                
+                                    <h1>Add A Camera</h1>
+                                    <p class="lead">Add new cameras to your collection here.</p>
+                            
+                                    <form class="text-center col-md-8 mx-auto">
+                                        <div class="form-group">
+                                            <select class="form-control" name="cameraOption">
+                                                <option value="1">Option 1</option>
+                                                <option value="2">Option 2</option>
+                                                <option value="3">Option 3</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group mt-2">
+                                            <input type="text" class="form-control" name="roadName" placeholder="Road Name">
+                                        </div>
+                                        <div class="form-group mt-2">
+                                            <input type="text" class="form-control" name="longitude" placeholder="Longitude">
+                                        </div>
+                                        <div class="form-group mt-2">
+                                            <input type="text" class="form-control" name="latitude" placeholder="Latitude">
+                                        </div>
+                                        <div class="form-group mt-2">
+                                            <input type="text" class="form-control" name="description" placeholder="Description">
+                                        </div>
+                                        <button type="submit" class="btn btn-primary mt-2">Add Camera</button>
+                                    </form>
+                            
+                                </div>
+                            
+                            </div>
+
+                        </div>
+    
+                        <!-- All Users Tab Content -->
+                        <div class="tab-pane fade" id="usersTab" role="tabpanel" aria-labelledby="users-tab">                    
+    
+                            <!-- All Users -->
+                            <div class="col-md-12 mt-3">
+
+                                <div class="p-3 text-center bg-dark text-white">
+                        
+                                    <h1>All Users</h1>
+                                    <p class="lead">All registered users in your application are shown here.</p>
+                        
+                                    <div class="table-responsive" style="max-height: 335px; overflow-y: auto;">
+                        
+                                        <table class="table table-secondary table-striped">
+                        
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">User ID</th>
+                                                    <th scope="col">First Name</th>
+                                                    <th scope="col">Last Name</th>
+                                                    <th scope="col">User Email</th>
+                                                    <th scope="col">User Role</th>
+                                                    <th scope="col"></th>
+                                                </tr>
+                                            </thead>
+                        
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Tong</td>
+                                                    <td>Rong</td>
+                                                    <td>kongrong@sit.com</td>
+                                                    <td>Admin</td>
+                                                    <td><button type="submit" class="btn btn-danger btn-sm">Delete User</button></td>
+                                                </tr>
+                                            </tbody>
+                        
+                                        </table>
+                                                
+                                    </div>
+                        
+                                </div>
+                        
+                            </div>
+
+                            <!-- Add A User -->
+                            <div class="col-md-6 mt-3 mx-auto">
+
+                                <div class="p-3 text-center bg-dark text-white align-items-center">
+                                
+                                    <h1>Add A User</h1>
+                                    <p class="lead">Add new users to your application here.</p>
+                            
+                                    <form class="text-center col-md-8 mx-auto">
+                                        <div class="form-group">
+                                            <select class="form-control" name="cameraOption">
+                                                <option value="1">Admin</option>
+                                                <option value="2">Regular User</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group mt-2">
+                                            <input type="text" class="form-control" name="userPassword" placeholder="User Password">
+                                        </div>
+                                        <div class="form-group mt-2">
+                                            <input type="text" class="form-control" name="firstName" placeholder="First Name">
+                                        </div>
+                                        <div class="form-group mt-2">
+                                            <input type="text" class="form-control" name="lastName" placeholder="Last Name">
+                                        </div>
+                                        <div class="form-group mt-2">
+                                            <input type="text" class="form-control" name="userEmail" placeholder="User Email Address">
+                                        </div>
+                                        <button type="submit" class="btn btn-primary mt-2">Add User</button>
+                                    </form>
+                            
+                                </div>
+                            
+                            </div>     
+
+                        </div>
+    
+                        <!-- All Camera Reports Tab Content -->
+                        <div class="tab-pane fade" id="cameraReportsTab" role="tabpanel" aria-labelledby="cameraReports-tab">
+
+                            <!-- New Camera Reports -->
+                            <div class="col-md-12">
+                        
+                                <div class="p-3 text-center bg-dark text-white">
+                        
+                                    <h1>New Camera Reports</h1>
+                                    <p class="lead">Newly submitted camera reports are shown here.</p>
+                        
+                                    <div class="table-responsive" style="max-height: 335px; overflow-y: auto;">
+                        
+                                        <table class="table table-secondary table-striped">
+                        
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Report ID</th>
+                                                    <th scope="col">Camera Type</th>
+                                                    <th scope="col">Camera Location</th>
+                                                    <th scope="col">Camera Picture Link</th>
+                                                    <th scope="col">Submitted By</th>
+                                                    <th scope="col">Submitted On</th>
+                                                    <th scope="col"></th>
+                                                    <th scope="col"></th>
+                                                </tr>
+                                            </thead>
+                        
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>MSC</td>
+                                                    <td>Airport Road</td>
+                                                    <td>www.sit.com</td>
+                                                    <td>rayhao@gmail.com</td>
+                                                    <td>10 October 2023</td>
+                                                    <td><button type="submit" class="btn btn-success btn-sm">Approve</button></td>
+                                                    <td><button type="submit" class="btn btn-danger btn-sm">Reject</button></td>
+                                                </tr>
+                                            </tbody>
+                        
+                                        </table>
+                                                
+                                    </div>
+                        
+                                </div>
+                        
+                            </div>
+
+                            <!-- Approved Camera Reports -->
+                            <div class="col-md-12 mt-3">
+
+                                <div class="p-3 text-center bg-dark text-white">
+                        
+                                    <h1>Approved Camera Reports</h1>
+                                    <p class="lead">Newly approved camera reports are shown here.</p>
+                        
+                                    <div class="table-responsive" style="max-height: 335px; overflow-y: auto;">
+                        
+                                        <table class="table table-secondary table-striped">
+                        
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Report ID</th>
+                                                    <th scope="col">Camera Type</th>
+                                                    <th scope="col">Camera Location</th>
+                                                    <th scope="col">Camera Picture Link</th>
+                                                    <th scope="col">Submitted By</th>
+                                                    <th scope="col">Submitted On</th>
+                                                    <th scope="col"></th>
+                                                </tr>
+                                            </thead>
+                        
+                                            <tbody>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>MSC</td>
+                                                    <td>Changi Road</td>
+                                                    <td>www.sit.com</td>
+                                                    <td>khairin@gmail.com</td>
+                                                    <td>12 October 2023</td>
+                                                    <td><button type="submit" class="btn btn-success btn-sm">Add To Camera Collection</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>FSC</td>
+                                                    <td>Nee Soon Road</td>
+                                                    <td>www.sit.com</td>
+                                                    <td>ahhhhfuck@gmail.com</td>
+                                                    <td>12 October 2023</td>
+                                                    <td><button type="submit" class="btn btn-success btn-sm disabled">Added To Camera Collection</button></td>
+                                                </tr>
+                                            </tbody>
+                        
+                                        </table>
+                                                
+                                    </div>
+                        
+                                </div>
+                        
+                            </div>
+                        
+                            <!-- Rejected Camera Reports -->
+                            <div class="col-md-12 mt-3">
+
+                                <div class="p-3 text-center bg-dark text-white">
+                        
+                                    <h1>Rejected Camera Reports</h1>
+                                    <p class="lead">Rejected camera reports are shown here.</p>
+                        
+                                    <div class="table-responsive" style="max-height: 335px; overflow-y: auto;">
+                        
+                                        <table class="table table-secondary table-striped">
+                        
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Report ID</th>
+                                                    <th scope="col">Camera Type</th>
+                                                    <th scope="col">Camera Location</th>
+                                                    <th scope="col">Camera Picture Link</th>
+                                                    <th scope="col">Submitted By</th>
+                                                    <th scope="col">Submitted On</th>
+                                                    <th scope="col"></th>
+                                                </tr>
+                                            </thead>
+                        
+                                            <tbody>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>MSC</td>
+                                                    <td>Changi Road</td>
+                                                    <td>www.sit.com</td>
+                                                    <td>khairin@gmail.com</td>
+                                                    <td>12 October 2023</td>
+                                                    <td><button type="submit" class="btn btn-success btn-sm">Approve</button></td>
+                                                </tr>
+                                            </tbody>
+                        
+                                        </table>
+                                                
+                                    </div>
+                        
+                                </div>
+                        
+                            </div>
+
+                        </div>
+    
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+
+    </body>
+
+</html>

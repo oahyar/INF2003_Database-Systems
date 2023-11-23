@@ -105,6 +105,15 @@
         }
     };
 </script>
+if(username === 'admin' && password === 'admin') {
+    localStorage.setItem('userRole', 'admin');
+    window.location.href = 'index.html';
+} else if(username === 'user' && password === 'user') {
+    localStorage.setItem('userRole', 'user');
+    window.location.href = 'regularUserPage.html';
+} else {
+    alert('Invalid username or password. Please try again.');
+}
 
 
 <script>
