@@ -2,11 +2,13 @@
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
+const cookieParser = require('cookie-parser');
+const mongoose = require('mongoose');
+
 const dbService = require('./services/dbServices');
 const apiV1Router = require('./api/routes');
 const config = require('./config/config');
-const cookieParser = require('cookie-parser');
-const { createUserTable, createCameraReportTable, createCameraApprovalTable } = require('./db/seed');
+// const { createUserTable, createCameraReportTable, createCameraApprovalTable } = require('./db/seed');
 
 const app = express();
 app.use(
@@ -19,6 +21,11 @@ const port = config.port || 8080;
 const host = config.host || '0.0.0.0';
 
 const pageRouter = express.Router();
+try {
+    mongoose.connect('mongodb://127.0.0.1:27017/TraffiCam');
+} catch (error) {
+    console.log(error);
+}
 // app.use(express.static(path.join(__dirname, '/views')));
 // app.set('view engine', 'ejs');
 app.engine('.html', require('ejs').renderFile); 
@@ -37,12 +44,12 @@ pageRouter.get('/test', function (req, res) {
     res.render('test.html');
 });
 
-pageRouter.get('/seed/createTables',async function(req, res){
-    createUserTable();
-    createCameraReportTable();
-    createCameraApprovalTable()
-    res.send("Tables Created")
-});
+// pageRouter.get('/seed/createTables',async function(req, res){
+//     createUserTable();
+//     createCameraReportTable();
+//     createCameraApprovalTable()
+//     res.send("Tables Created")
+// });
 
 pageRouter.get('/logout', function (req, res) {
     res.clearCookie('user');
