@@ -8,7 +8,7 @@ const mongoose = require('mongoose');
 const dbService = require('./services/dbServices');
 const apiV1Router = require('./api/routes');
 const config = require('./config/config');
-// const { createUserTable, createCameraReportTable, createCameraApprovalTable } = require('./db/seed');
+const { authToken } = require('./services/authentication');
 
 const app = express();
 app.use(
@@ -22,13 +22,16 @@ const host = config.host || '0.0.0.0';
 
 const pageRouter = express.Router();
 try {
-    mongoose.connect('mongodb://127.0.0.1:27017/TraffiCam');
+    mongoose.connect('mongodb://127.0.0.1:27017/TraffiCam', {
+        user: config.mongo_user,
+        pass: config.pass,
+    });
 } catch (error) {
     console.log(error);
 }
 // app.use(express.static(path.join(__dirname, '/views')));
 // app.set('view engine', 'ejs');
-app.engine('.html', require('ejs').renderFile); 
+app.engine('.html', require('ejs').renderFile);
 app.use(bodyParser.json());
 app.use(cookieParser());
 // app.set('views', path.join(__dirname, 'views'));
@@ -37,26 +40,32 @@ app.use('/public', express.static('public'));
 app.use('/api', apiV1Router);
 app.use('/', pageRouter);
 
-pageRouter.get('/', function (req, res) {
-    res.render('index.html')
-});
-pageRouter.get('/test', function (req, res) {
-    res.render('test.html');
+pageRouter.get('/', authToken, function (req, res) {
+    res.render('index.html');
 });
 
-// pageRouter.get('/seed/createTables',async function(req, res){
-//     createUserTable();
-//     createCameraReportTable();
-//     createCameraApprovalTable()
-//     res.send("Tables Created")
-// });
+pageRouter.get('/login', function (req, res) {
+    res.render('login.html');
+});
+
+pageRouter.get('/register', function (req, res) {
+    res.render('register.html');
+});
+
+pageRouter.get('/admin', authToken, function (req, res) {
+    res.render('admin.html');
+});
+
+pageRouter.get('/home', authToken, function (req, res) {
+    res.render('regularUserPage.html');
+});
+
 
 pageRouter.get('/logout', function (req, res) {
     res.clearCookie('user');
     res.clearCookie('token');
     res.redirect('/login');
 });
-
 
 // // Global Error Handler
 // error handler

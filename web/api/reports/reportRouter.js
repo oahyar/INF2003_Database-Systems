@@ -4,10 +4,10 @@ const reportController = require('./reportController');
 const reportRouter = express.Router();
 
 reportRouter.get('/', authToken, reportController.getAllReports);
-reportRouter.get('/:id', authToken, reportController.getSingleReport);
+reportRouter.get('/one', authToken, reportController.getSingleReport);
 reportRouter.post('/submit', authToken, reportController.createReport);
-reportRouter.put('/:id/accept', authToken, reportController.approveReport);
-reportRouter.put('/:id/reject', authToken, reportController.rejectReport);
-// reportRouter.delete('/:id', authToken);
+reportRouter.put('/accept', authToken, reportController.approveReport);
+reportRouter.put('/reject', authToken, reportController.rejectReport);
+reportRouter.delete('/delete', authToken, reportController.deleteReport);
 
-module.exports = { reportRouter };
+module.exports = reportRouter;

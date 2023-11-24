@@ -5,8 +5,8 @@ const cameraRouter = require('./camera/cameraRouter');
 const router = express.Router();
 
 router.use('/user', userRouter);
-// router.use('/report', reportRouter);
-// router.use('/camera', cameraRouter);
+router.use('/report', reportRouter);
+router.use('/camera', cameraRouter);
 
 
 

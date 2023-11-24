@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const cameraSchema = require('./cameraSchema');
 
 async function getAllCameras(req, res, next){
-    await camera.find().then(cameras => {
+    await cameraSchema.find().then(cameras => {
         res.send(cameras)
     }).catch(err => {
         throw new Error(err)

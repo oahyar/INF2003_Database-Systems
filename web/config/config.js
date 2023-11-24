@@ -12,7 +12,8 @@ config = {
     passSecret: process.env.passSecret,
     passSalt: process.env.passSalt,
     port: process.env.PORT,
-    host: process.env.HOST
+    host: process.env.HOST,
+    mongo_user: process.env.MONGO_USER
 };
 
 module.exports = config;

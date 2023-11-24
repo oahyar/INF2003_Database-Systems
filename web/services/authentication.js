@@ -6,11 +6,15 @@ function generateToken(user) {
 }
 
 function authToken(req, res, next) {
-    const token = res.cookie('token');
+    const token = req.cookies.token;
+    if (!token) {
+        return res.redirect('/login');
+    }
+
     jwt.verify(token, config.passSecret, (err, user) => {
         if (err) {
             console.log(err);
-            res.status(403).send('Error in accessing resource');
+            return res.redirect('/login');
         }
         req.user = user;
         next();
