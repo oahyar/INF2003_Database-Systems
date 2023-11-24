@@ -1231,3 +1231,21 @@ h6 {
   font-size: 13px;
   color: #012970;
 }
+
+.map-container {
+  position: relative;
+}
+
+#map {
+  text-align: center;
+  /* No need for position: relative; here anymore */
+}
+
+.profile {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+}
+
+/* ...other CSS... */
