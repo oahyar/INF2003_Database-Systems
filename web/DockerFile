@@ -17,4 +17,5 @@ COPY . .
 #Expose port
 EXPOSE 8000
 
-CMD bash -c "npm install && npm run dev"
+
+CMD bash -c "npm install -g pm2 && npm install && pm2 start app.js"

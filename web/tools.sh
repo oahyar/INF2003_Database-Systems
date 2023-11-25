@@ -35,7 +35,7 @@ then
     docker-compose rm -f
 
     echo Starting containers...
-    docker-compose up --build -d
+    docker-compose up -f docker-compose.prod.yml --build -d
 elif [[ $choice -eq $ssl ]]
 then
     COMPOSE="/usr/bin/docker-compose --no-ansi"
