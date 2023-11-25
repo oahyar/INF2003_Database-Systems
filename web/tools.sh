@@ -50,13 +50,13 @@ elif [[ $choice -eq $prod ]]
 then
     # This script restarts the docker compose
     echo "Stopping all containers"
-    docker-compose stop
+    docker compose stop
 
     echo "Removing all containers"
-    docker-compose rm -f
+    docker compose rm -f
 
     echo "Starting containers..."
-    docker-compose up --build -d
+    docker compose -f docker-compose.prod.yml up --build -d
 elif [[ $choice -eq $ssl ]]
 then
     COMPOSE="/usr/bin/docker-compose --no-ansi"
