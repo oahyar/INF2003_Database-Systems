@@ -54,7 +54,7 @@ pageRouter.get('/register', function (req, res) {
 });
 
 pageRouter.get('/admin', authToken, function (req, res) {
-    res.render('admin.html');
+    res.render('adminUserPage.html');
 });
 
 pageRouter.get('/home', authToken, function (req, res) {
