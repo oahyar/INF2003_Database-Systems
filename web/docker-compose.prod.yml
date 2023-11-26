@@ -3,12 +3,17 @@ version: '3.8'
 services:
   web:
       container_name: web
-      build: .
+      build: ./
       restart: always
       ports:
         - 8080:8080
+      env_file:
+        - .prod.env
       volumes:
         - web_data:/etc/data
+      depends_on:
+        - mysqldb
+        - mongodb
       networks:
         - app-network
 
@@ -18,58 +23,40 @@ services:
     environment:
       MYSQL_USER: "admin"
       MYSQL_ROOT_PASSWORD : "devenv22!"
+      MYSQL_DATABASE: ${DB_NAME}
     restart: always
+    command: --init-file /data/application/init.sql
     volumes:
-      - db_data:/var/lib/mysql
+      - ./init.sql:/data/application/init.sql
+      - ./db_data:/var/lib/mysql
     ports:
       - "3306:3306"
     networks:
       - app-network
-
-  webserver:
-    image: nginx:mainline-alpine
-    container_name: webserver
-    restart: unless-stopped
+  
+  mongodb:
+    container_name: cameraDB
+    image: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME : "admin"
+      MONGO_INITDB_ROOT_PASSWORD : "devenv22!"
+      MONGO_INITDB_DATABASE : "TraffiCam"
+    restart: always
+    volumes:
+      - ./mongodb_data:/data/db
+      - ./init-mongo.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
     ports:
-        - "80:80"
-        - "443:443"
-    volumes:
-        - web-root:/var/www/html
-        - ./nginx-conf:/etc/nginx/conf.d
-        - certbot-etc:/etc/letsencrypt
-        - certbot-var:/var/lib/letsencrypt
-        - dhparam:/etc/ssl/certs
-    depends_on:
-        - web
+      - "27017:27017"
     networks:
-        - app-network
-
-  certbot:
-    image: certbot/certbot
-    container_name: certbot
-    volumes:
-        - certbot-etc:/etc/letsencrypt
-        - certbot-var:/var/lib/letsencrypt
-        - web-root:/var/www/html
-    depends_on:
-        - webserver
-    command: certonly --webroot --webroot-path=/var/www/html --email ahhhfiq@gmail.com --agree-tos --no-eff-email --force-renewal -d ahhhfiq.com -d www.ahhhfiq.com
-
-
+      - app-network
 
 volumes:
-  certbot-etc:
-  certbot-var:
   web_data:
     name: ${VOLUME_WEB}
   db_data:
     name: ${VOLUME_DB}
-  dhparam:
-        driver: local
-        driver_opts:
-            type: none
-            device: /home/ahhhfiq/INF2003/web/dhparam
-            o: bind
+  mongodb_data:
+    name: ${VOLUME_MONGO}
 
 networks:
     app-network:

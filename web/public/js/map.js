@@ -59,19 +59,32 @@ async function initMap() {
     }
     // Type 1
     const RLC = {
-        url: 'public/img/red-marker.png', // URL to the image for the red marker
-        scaledSize: new google.maps.Size(30, 30), // Size of the icon
+        path: google.maps.SymbolPath.CIRCLE,
+        fillColor: 'red', // Color of the marker
+        fillOpacity: 1, // Opacity (1 is fully opaque)
+        scale: 8, // Size of the marker
+        strokeWeight: 1, // Border thickness
+        strokeColor: 'black', // Border color
     };
-    // Type 2
+
     const FSC = {
-        url: 'public/img/blue-marker.png', // URL to the image for the blue marker
-        scaledSize: new google.maps.Size(30, 30), // Size of the icon
+        path: google.maps.SymbolPath.CIRCLE,
+        fillColor: 'blue',
+        fillOpacity: 1,
+        scale: 8,
+        strokeWeight: 1,
+        strokeColor: 'black',
     };
-    //Type 3
+
     const MSC = {
-        url: 'public/img/green-marker.png', // URL to the image for the green marker
-        scaledSize: new google.maps.Size(30, 30), // Size of the icon
+        path: google.maps.SymbolPath.CIRCLE,
+        fillColor: 'green',
+        fillOpacity: 1,
+        scale: 8,
+        strokeWeight: 1,
+        strokeColor: 'black',
     };
+
 
 
     function handleLocationError(initialPosition) {

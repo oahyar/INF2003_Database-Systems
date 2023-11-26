@@ -87,7 +87,7 @@
                                                     <td>Airport Road</td>
                                                     <td>1.00</td>
                                                     <td>1.00</td>
-                                                    <td>Under flyover, over your mother</td>
+                                                    <td>Flyover</td>
                                                     <td><button type="submit" class="btn btn-success btn-sm">Update Details</button></td>
                                                     <td><button type="submit" class="btn btn-danger btn-sm">Delete</button></td>
                                                 </tr>
@@ -151,15 +151,16 @@
                         
                                     <div class="table-responsive" style="max-height: 335px; overflow-y: auto;">
                         
-                                        <table class="table table-secondary table-striped">
+                                        <table class="table table-secondary table-striped" id="userTable">
                         
                                             <thead>
                                                 <tr>
                                                     <th scope="col">User ID</th>
                                                     <th scope="col">First Name</th>
                                                     <th scope="col">Last Name</th>
-                                                    <th scope="col">User Email</th>
+                                                    <th scope="col">Username</th>
                                                     <th scope="col">User Role</th>
+                                                    <th scope="col">Actions</th>
                                                     <th scope="col"></th>
                                                 </tr>
                                             </thead>
@@ -167,14 +168,14 @@
                                             <tbody>
                                                 <tr>
                                                     <td>1</td>
-                                                    <td>Tong</td>
-                                                    <td>Rong</td>
-                                                    <td>kongrong@sit.com</td>
-                                                    <td>Admin</td>
+                                                    <td>fname</td>
+                                                    <td>lname</td>
+                                                    <td>username</td>
+                                                    <td>role</td>
+                                                    <td><button type="submit" class="btn btn-success btn-sm">Make Admin</button></td>
                                                     <td><button type="submit" class="btn btn-danger btn-sm">Delete User</button></td>
                                                 </tr>
                                             </tbody>
-                        
                                         </table>
                                                 
                                     </div>
@@ -182,40 +183,7 @@
                                 </div>
                         
                             </div>
-
-                            <!-- Add A User -->
-                            <div class="col-md-6 mt-3 mx-auto">
-
-                                <div class="p-3 text-center bg-dark text-white align-items-center">
-                                
-                                    <h1>Add A User</h1>
-                                    <p class="lead">Add new users to your application here.</p>
-                            
-                                    <form class="text-center col-md-8 mx-auto">
-                                        <div class="form-group">
-                                            <select class="form-control" name="cameraOption">
-                                                <option value="1">Admin</option>
-                                                <option value="2">Regular User</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group mt-2">
-                                            <input type="text" class="form-control" name="userPassword" placeholder="User Password">
-                                        </div>
-                                        <div class="form-group mt-2">
-                                            <input type="text" class="form-control" name="firstName" placeholder="First Name">
-                                        </div>
-                                        <div class="form-group mt-2">
-                                            <input type="text" class="form-control" name="lastName" placeholder="Last Name">
-                                        </div>
-                                        <div class="form-group mt-2">
-                                            <input type="text" class="form-control" name="userEmail" placeholder="User Email Address">
-                                        </div>
-                                        <button type="submit" class="btn btn-primary mt-2">Add User</button>
-                                    </form>
-                            
-                                </div>
-                            
-                            </div>     
+    
 
                         </div>
     
@@ -231,9 +199,7 @@
                                     <p class="lead">Newly submitted camera reports are shown here.</p>
                         
                                     <div class="table-responsive" style="max-height: 335px; overflow-y: auto;">
-                        
                                         <table class="table table-secondary table-striped">
-                        
                                             <thead>
                                                 <tr>
                                                     <th scope="col">Report ID</th>
@@ -307,14 +273,12 @@
                                                     <td>FSC</td>
                                                     <td>Nee Soon Road</td>
                                                     <td>www.sit.com</td>
-                                                    <td>ahhhhfuck@gmail.com</td>
+                                                    <td>test@gmail.com</td>
                                                     <td>12 October 2023</td>
                                                     <td><button type="submit" class="btn btn-success btn-sm disabled">Added To Camera Collection</button></td>
                                                 </tr>
                                             </tbody>
-                        
                                         </table>
-                                                
                                     </div>
                         
                                 </div>
@@ -377,7 +341,7 @@
     
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    
+        <script src="/public/js/admin.js"></script>
 
     </body>
 

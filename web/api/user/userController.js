@@ -2,6 +2,22 @@ const bcrypt = require('bcrypt');
 const dbService = require('../../services/dbServices');
 const { generateToken } = require('../../services/authentication');
 
+function getAllUser(req, res, next){
+    dbService.pool.query(
+        'SELECT * FROM userTable',
+        (err, rows, fields) => {
+            if (err) {
+                throw new Error(err);
+            } else if (rows.length <= 0) {
+                return res.send('No Users');
+            } else {
+                let users = rows;
+                return res.send(users);
+            }
+        }
+    );
+}
+
 function getUser(req, res, next) {
     let userID = req.body.userID;
 
@@ -16,13 +32,14 @@ function getUser(req, res, next) {
                         'Some error occurred while fetching user details',
                 });
             } else {
-                let user = rows;
+                let user = rows[0];
+                console.log(user)
                 let userDetails = {
-                    userID: user[0].userID,
-                    userRole: user[0].userRole,
-                    firstName: user[0].firstName,
-                    lastName: user[0].lastName,
-                    username: user[0].username,
+                    userID: user.userID,
+                    userRole: user.userRole,
+                    firstName: user.firstName,
+                    lastName: user.lastName,
+                    username: user.username,
                 };
                 res.send(userDetails);
             }
@@ -51,8 +68,16 @@ async function login(req, res, next) {
                     id: userDetails.uid,
                     username: userDetails.username,
                 });
-                res.cookie('token', token);
-                res.status(200).redirect('/');
+                let user = {
+                    userRole: userDetails.userRole,
+                    username: userDetails.username,
+                };
+                let cookie = {
+                    token: token,
+                    user: user
+                }
+                res.status(200).cookie('token', cookie).redirect('/');
+                res.end();
             }
         }
     );
@@ -80,10 +105,18 @@ async function createUser(req, res, next) {
                     }
                     let token = generateToken({
                         id: rows.insertId,
-                        username: user.username,
+                        username: rows.username,
                     });
-                    res.cookie('token', token);
-                    res.status(200).redirect('/');
+                    let user = {
+                        userRole: rows.userRole,
+                        username: rows.username,
+                    };
+                    let cookie = {
+                        token: token,
+                        user: user,
+                    };
+                    res.status(200).cookie('token', cookie).redirect('/');
+                    res.end();
                 }
             );
         })
@@ -117,64 +150,9 @@ function updateUser(req, res, next) {
             if (err) {
                 throw new Error(err);
             }
-            res.status(201).send('User updated successfully'); // or use res.json() for JSON response
+            res.status(200).send('User updated successfully'); // or use res.json() for JSON response
         }
     );
-}
-// TODO: Fix this shit
-function updateUserOld(req, res, next) {
-    // TODO Cleanup
-    let userPassword = req.body.password ?? null;
-    if (userPassword != null) {
-        bcrypt.hash(userPassword, 10).then((hash) => {
-            let user = {
-                userID: req.body.userID,
-                userRole: req.body.userRole ?? null,
-                username: req.body.username ?? null,
-                firstName: req.body.firstName ?? null,
-                lastName: req.body.lastName ?? null,
-                password: hash,
-            };
-            dbService.pool.query(
-                'UPDATE userTable SET userRole = IFNULL(null, userRole), username = IFNULL(null, username), firstName = IFNULL(null, firstName), lastName IFNULL(null, lastName) WHERE userID = ?',
-                [
-                    user.userRole,
-                    user.username,
-                    user.password,
-                    user.firstName,
-                    user.lastName,
-                    user.userID,
-                ],
-                function (err, rows, fields) {
-                    res.status(201);
-                }
-            );
-        });
-        let user = {
-            userID: req.body.userID,
-            userRole: req.body.userRole ?? null,
-            username: req.body.username ?? null,
-            firstName: req.body.firstName ?? null,
-            lastName: req.body.lastName ?? null,
-        };
-        dbService.pool.query(
-            'UPDATE userTable SET userRole = IFNULL(null, userRole), username = IFNULL(null, username), firstName = IFNULL(null, firstName), lastName IFNULL(null, lastName WHERE userID = ?',
-            [
-                user.userRole,
-                user.username,
-                user.password,
-                user.firstName,
-                user.lastName,
-                user.userID,
-            ],
-            function (err, rows, fields) {
-                if (err) {
-                    throw new Error(err);
-                }
-                res.status(201);
-            }
-        );
-    }
 }
 
 function deleteUser(req, res, next) {
@@ -186,7 +164,7 @@ function deleteUser(req, res, next) {
             if (err) {
                 throw new Error(err);
             } else {
-                res.send('Delete completed');
+                res.send(200);
             }
         }
     );
@@ -194,6 +172,7 @@ function deleteUser(req, res, next) {
 
 module.exports = {
     getUser,
+    getAllUser,
     login,
     createUser,
     updateUser,

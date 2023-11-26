@@ -11,7 +11,7 @@ function authToken(req, res, next) {
         return res.redirect('/login');
     }
 
-    jwt.verify(token, config.passSecret, (err, user) => {
+    jwt.verify(token.token, config.passSecret, (err, user) => {
         if (err) {
             console.log(err);
             return res.redirect('/login');

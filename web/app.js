@@ -10,6 +10,7 @@ const dbService = require('./services/dbServices');
 const apiV1Router = require('./api/routes');
 const config = require('./config/config');
 const { authToken } = require('./services/authentication');
+const { run } = require('./db/seed');
 
 const app = express();
 app.use(
@@ -54,16 +55,22 @@ pageRouter.get('/register', function (req, res) {
 });
 
 pageRouter.get('/admin', authToken, function (req, res) {
-    res.render('adminUserPage.html');
 });
 
-pageRouter.get('/home', authToken, function (req, res) {
+pageRouter.get('/reports', authToken, function (req, res) {
+    token = req.cookies.token;
+    if (token.user.userRole === 2){
+        res.render('adminUserPage.html');
+    }
     res.render('regularUserPage.html');
 });
 
+pageRouter.get('/api/seed', function (req, res){
+    run();
+    res.send(200)
+})
 
 pageRouter.get('/logout', function (req, res) {
-    res.clearCookie('user');
     res.clearCookie('token');
     res.redirect('/login');
 });
@@ -78,6 +85,7 @@ app.use(function (err, req, res, next) {
 
     // render the error page
     res.status(err.status || 500);
+    console.log(err);
     res.send(err.message);
 });
 

@@ -32,6 +32,8 @@ async function createNewCamera(req, res, next){
         });
 }
 
+
+
 module.exports = {
     getAllCameras,
     createNewCamera,

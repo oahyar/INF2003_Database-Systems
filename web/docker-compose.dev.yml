@@ -28,7 +28,7 @@ services:
     command: --init-file /data/application/init.sql
     volumes:
       - ./init.sql:/data/application/init.sql
-      - db_data:/var/lib/mysql
+      - ./db_data:/var/lib/mysql
     ports:
       - "3306:3306"
     networks:
@@ -43,7 +43,7 @@ services:
       MONGO_INITDB_DATABASE : "TraffiCam"
     restart: always
     volumes:
-      - mongodb_data:/data/db
+      - ./mongodb_data:/data/db
       - ./init-mongo.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
     ports:
       - "27017:27017"

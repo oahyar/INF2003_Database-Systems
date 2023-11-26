@@ -76,9 +76,11 @@ function seed(){
     addCamerasToDB('mergedFile.json');
 }
 
-clearData();
-seed();
+function run(){
+    clearData();
+    seed();
+}
 
 module.exports = {
-    seed,
+    run
 };
