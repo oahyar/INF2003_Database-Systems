@@ -3,12 +3,17 @@ version: '3.8'
 services:
   web:
       container_name: web
-      build: .
+      build: ./
       restart: always
       ports:
         - 8080:8080
+      env_file:
+        - .prod.env
       volumes:
         - web_data:/etc/data
+      depends_on:
+        - mysqldb
+        - mongodb
       networks:
         - app-network
 
@@ -18,11 +23,30 @@ services:
     environment:
       MYSQL_USER: "admin"
       MYSQL_ROOT_PASSWORD : "devenv22!"
+      MYSQL_DATABASE: ${DB_NAME}
     restart: always
+    command: --init-file /data/application/init.sql
     volumes:
+      - ./init.sql:/data/application/init.sql
       - db_data:/var/lib/mysql
     ports:
       - "3306:3306"
+    networks:
+      - app-network
+  
+  mongodb:
+    container_name: cameraDB
+    image: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME : "admin"
+      MONGO_INITDB_ROOT_PASSWORD : "devenv22!"
+      MONGO_INITDB_DATABASE : "TraffiCam"
+    restart: always
+    volumes:
+      - mongodb_data:/data/db
+      - ./init-mongo.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+    ports:
+      - "27017:27017"
     networks:
       - app-network
 
@@ -31,6 +55,8 @@ volumes:
     name: ${VOLUME_WEB}
   db_data:
     name: ${VOLUME_DB}
+  mongodb_data:
+    name: ${VOLUME_MONGO}
 
 networks:
     app-network:

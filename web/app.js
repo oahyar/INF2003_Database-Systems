@@ -1,5 +1,6 @@
 // const helmet = require('helmet');
 const express = require('express');
+// const helmet = require('helmet')
 const path = require('path');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
@@ -22,8 +23,8 @@ const host = config.host || '0.0.0.0';
 
 const pageRouter = express.Router();
 try {
-    mongoose.connect('mongodb://127.0.0.1:27017/TraffiCam', {
-        user: config.mongo_user,
+    mongoose.connect(config.mongoURI, {
+        user: config.mongoUser,
         pass: config.pass,
     });
 } catch (error) {

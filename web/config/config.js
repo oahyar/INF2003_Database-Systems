@@ -13,7 +13,8 @@ config = {
     passSalt: process.env.passSalt,
     port: process.env.PORT,
     host: process.env.HOST,
-    mongo_user: process.env.MONGO_USER
+    mongoUser: process.env.MONGO_USER,
+    mongoURI: process.env.MONGO_URI
 };
 
 module.exports = config;

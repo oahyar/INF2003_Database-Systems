@@ -2,13 +2,12 @@ const dbService = require('../services/dbServices');
 const mongoose = require('mongoose');
 const cameraSchema = require('../api/camera/cameraSchema');
 const fs = require('fs');
+const path = require('path');
 
-mongoose.connect('mongodb://devacc:devenv22!@127.0.0.1:27017/TraffiCam', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    authSource: 'TraffiCam',
+mongoose.connect(config.mongoURI, {
+    user: config.mongoUser,
+    pass: config.pass,
 });
-//     'mongodb://devacc:devenv22!@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&authSource=TraffiCam'
 
 function createUserTable() {
     try {
@@ -42,6 +41,8 @@ function createCameraApprovalTable() {
 }
 
 function addCamerasToDB(filePath) {
+    filePath = path.join(__dirname, filePath);
+
     fs.readFile(filePath, 'utf8', (err, data) => {
         if (err) {
             console.error('Error reading file:', err);
@@ -63,18 +64,21 @@ function addCamerasToDB(filePath) {
     });
 }
 
-function seed(){
-    createUserTable();
-    createCameraReportTable();
-    createCameraApprovalTable();
-    addCamerasToDB('./mergedFile.json');
+function clearData(){
+    cameraSchema.deleteMany({}).then(()=>{
+        console.log("Cleared Cameras");
+    }).catch((err)=>{
+        console.log(err)
+    });
 }
 
+function seed(){
+    addCamerasToDB('mergedFile.json');
+}
+
+clearData();
 seed();
 
 module.exports = {
-    createUserTable,
-    createCameraReportTable,
-    createCameraApprovalTable,
     seed,
 };

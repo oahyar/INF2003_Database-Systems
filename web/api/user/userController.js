@@ -104,7 +104,6 @@ function updateUser(req, res, next) {
     if (user.password != null) {
         user.password = bcrypt.hash(user.password, 10);
     }
-    console.log(user);
     dbService.pool.query(
         'UPDATE userTable SET userRole = IFNULL(?, userRole), username = IFNULL(?, username), firstName = IFNULL(?, firstName), lastName = IFNULL(?, lastName) WHERE userID = ?',
         [
